@@ -1,0 +1,602 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    }
+    
+   body{
+        background-color: #ffff;
+        font-family: 'Open Sans', sans-serif;
+     
+    }
+/* ----------------------Header--------------------------*/
+
+    .container-fluid header{
+        background: gold;
+    }
+   /*---Logo--- */
+    .container-fluid header .logo-menu .logo{
+        background:#363636;
+        color: #ffff;
+        font-size: 22px;
+        font-weight:400;
+        font-family: 'Open Sans', sans-serif;
+        letter-spacing: 0.2px;
+       
+    }
+    
+    .boton-icon-list{
+        background: gold;
+        border: none;
+        color: #ffff;
+        padding-top: 12px;
+      }
+      /*--Logo de menú--*/
+      .bi-list{
+        height: 30px;
+        width: 30px;
+      
+    }
+      /* ------------- */
+  .menu-title{
+      color: #ffff;
+      font-weight: 500;
+      margin-top: 15px;
+   }
+
+
+  /*------Menu para versiones menores a 992px------- */
+  .offcanvas-start{
+    width:200px;
+    line-height: 25px;
+   letter-spacing: 0.4px;
+   font-size:18px;
+}
+
+.offcanvas-header{
+    height:55px;
+    width:199px;
+    background-color:  gold;
+    
+}
+
+.offcanvas-header .btn-close{
+    margin-left: 140px;
+}
+  /*------Menu para versiones mayores o iguales a 992px------- */
+  .auxiliar-container{
+    position: relative;
+   
+  }
+
+ .modal-menu{
+    display: none; /* Hidden by default */
+    position: absolute; /* Stay in place */
+    z-index: 1;
+     /* Sit on top */
+    /* Location of the box */
+    left:0;
+    top:0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+   /*  overflow: auto;  *//* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+    color:white;
+    
+  }
+  /* ---------------------------------------------------------------- */
+  /* -------------Categorías del Menú (ambas versiones)--------------*/
+    /*Observación:La clase "categorias" pertenece sólo a la versión mayor 992px */
+  .categorias{
+  width:15%;
+ margin-left:15%;
+  }
+   /* ----------- */
+  .list-group{
+    border-radius: 0 0 3px 3px;
+  }
+  /* ------------ */
+  .list-group-item:hover{
+    border-left: 5px solid gold;
+    
+  }
+  .primero:hover{
+      border-top: 1px solid rgb(235, 233, 228);
+  }
+  
+  .ultimo:hover{
+      border-bottom: 1px solid rgb(235, 233, 228); 
+  }
+/*------------------------------------------ */
+/*------------------Navbar------------------ */
+   /*-----------Inicio Sesion-----------*/
+
+    /* Dispositivos menores de 992px */
+    .container-fluid header nav .nav-items-sesion{
+       border: none;
+        font-size: 15px;
+        font-weight:500;
+        color:#363636;
+        background: gold;
+    }
+     /* Dispositivos mayores de 992px */
+     .btn-nav-items-sesion{
+        background:gold;
+        color: white;
+        border: none;
+        font-size: 16px;
+        border: none;
+        font-weight:500;
+        padding: 23px;
+        display: flex;
+      }
+
+      /* inicio sesion hover (versiones mayores a 992px) */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background: #ffff;
+    width:100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background:gold;color: #ffff;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .btn-nav-items-sesion {background:#363636;}
+
+          /*--------------- Modal-sesion (Ambas versiones)-------------*/
+
+  /* Formulario inicio sesion*/
+
+.modal-header{
+    padding-top: 0;
+    padding-bottom: 0;
+    background: gold;
+    height:40px;
+    padding-left: 0;
+    width:100%;
+    margin-bottom: 10px;
+   }
+
+
+.container-logo-header{
+    color: #ffff;
+    background: #363636;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    align-items: center;
+  /*   margin-bottom: 0; */
+    height: 100%;
+    font-size: 20px;
+}
+ .name-logo-init{
+     color: gold;
+    
+ }
+.container-modal-body{
+    background: #ffff;
+    width:100%;
+    display: flex;
+    flex-direction:column;
+    font-size: 14px;
+    margin-top:10px;
+   
+}
+
+.title-modal-body{
+   margin-bottom:40px;
+    font-size:25px;
+    font-weight:400;
+    letter-spacing: 0.1px;
+    line-height: 32px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.input{
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid #363636;
+    margin-bottom: 40px;
+   width: 95%;
+}
+
+.input:focus{
+    outline:none;
+}
+.contenedor-boton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.boton{
+    border-radius: 100px;
+    background: gold;
+    border: none;
+    width: 90%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+   font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0.3px;
+    color: #ffff;
+
+}
+
+.label{
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.invitacion-a-registro{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    
+}
+.reset-message{
+    text-decoration: underline;
+    margin-bottom: 13px;
+}
+
+  .container-password{
+      position: relative;
+  }
+
+  .eye{
+    position: absolute;
+    right: 30px;
+    top: 33px;
+    border: none;
+    background: #ffff;
+  }
+  .bi-eye-slash{
+     
+      width: 25px;
+      height: 25px;
+      color: #a19c9c;
+  }
+
+  .register-message{
+      color: black;
+  }
+
+
+.container-email, .container-password, .reset-message{
+ margin-left: 15px;
+}
+   
+
+
+    /*---Mis compras (sólo para versiones mayores o igual a 992px)--*/
+    .my-shopping{
+        font-size: 16px;
+        font-weight:500;
+        text-decoration: none;
+        color: #ffff;
+        padding-top:23px;
+       }
+
+    /*--Carrito de compras--*/
+   
+     .bi-cart2{
+        width: 30px;
+        height: 30px;
+        color: #ffff;
+        margin-top:1px;
+      }
+/* -------------------------- */
+ /*-------Barra de búsqueda-------*/
+  .search-bar{
+    position: relative;
+}
+
+.search-bar .search-bar-icon{
+    position: absolute;
+    background: #363636;
+    border-radius: 100px;
+    height: 40px;
+    width:40px;
+    padding-top:6px;
+    padding-left:8px;
+    right: 10px;    
+}
+
+.search-bar .search-bar-icon svg{
+    height: 25px;
+    width: 25px;
+    color: #ffff;
+}
+
+.search-bar input{
+  width:100%;
+  border:none;
+  background: #ffff;
+  height: 40px;
+  border-radius: 100px;
+  padding-left:20px;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 22px;
+  letter-spacing: 0.2px;
+  margin-right: 10px;
+ }
+
+ .search-bar input:focus{
+    outline:none;
+}
+/* -------------------------------------- Main---------------------------------------------- */
+/*--- Barra de publicidad ---*/
+.commercial{
+ background: #8B9386;
+ color: #ffff;
+ font-family: 'Open Sans', sans-serif;
+ height: 45px;
+ width:100%;
+ font-size: 14px;
+ gap:0;
+}
+#58595B;
+/* #7F807A; */
+/*  */
+/* */
+/* #858377; */
+.bi-truck{
+    width: 50px;
+    height: 50px;
+}
+
+.highlight{
+    color: gold;
+    font-weight: 700;
+}
+
+
+/*--- Ofertas ---*/
+
+.producto-oferta{
+    text-decoration: none;
+    color: #363636;
+    position: relative;
+   
+}
+  
+  .card{
+      background: #363636;
+      border: 1px solid #c0c0c0;
+      /* border-radius: 4px 4px 4px 4px; */
+  }
+  
+   .image-offer{
+        opacity: 1;
+        display: block;
+       transition: .5s ease;
+        backface-visibility: hidden;
+        width:100%;
+        
+      border-radius: 3px 3px 0 0;
+     }
+    .producto-oferta:hover .image-offer{
+        opacity: 0.7;
+      }
+      
+
+    .producto-oferta:hover{
+        
+        color: #363636;
+    }
+
+    .card-body{
+        border-top: 5px solid #363636;
+        background: gold;
+    }
+    .card-body-big{
+       /*  height: 94px; */
+        margin-top:0px;
+        padding-bottom: 35px;
+    }
+    .card-text{
+        font-size:15px;
+         font-weight:500; 
+         margin-bottom:0;
+    }
+    .price-offer{
+        display: flex; 
+        justify-content: end;
+    }
+
+    .container-price-offer{
+        background: #363636;
+         height: auto;
+          border-radius:2px;
+          width:120px; 
+          color:#ffff;
+           padding-left:8px;
+           padding-bottom: 0;
+    }
+
+/*--- Novedades ---*/
+
+   .container-image-novelties{
+    position: relative;
+}
+.image-novelties{
+    border-radius: 4px 4px 4px 4px;
+    width:100%;
+    transition: all 0.5s ease;
+    height: 100%;
+}
+
+.image-novelties:hover{
+    transform: scale(1.05,1.05);
+    box-shadow: 0 4px 8px 0 #0c0d0dbd;
+   
+}
+.container-image-novelties:hover
+  .container-price-novelties{
+    display: block;
+}
+
+ .container-information-novelties{
+    bottom:0;
+    right: 0;
+    position:absolute;
+}
+
+  .product-name{
+    background:#363636;
+    color:#ffff;
+    padding-left: 10px;
+    padding-right: 10px;
+    height:25px;
+  }
+  .container-price-novelties{
+    display: none;
+  }
+  .price-novelties{
+    background:gold;
+    border-radius:4px 4px 0 0;
+    border: 3px solid #363636;
+    color:#ffff;
+    margin-bottom: 0;
+    width: 100%;
+    font-size: 28px;
+    font-weight: 500;
+    height:50px;
+   /*  align-self: center; */
+    display: flex;
+    justify-content: center;
+    /* padding-bottom: 50px; */
+    margin-left:0;
+    }
+
+    /*--- Marcas --- */
+    .container-logo{
+        border-radius: 100px;
+        background-color:#ffff;
+        height: 80px;
+        width: 80px;
+        box-shadow: 0 4px 8px 0 #0c0d0dbd;
+      /*   box-shadow: 0 10px 15px -5px rgba(0,0,0,0.65); */
+    }
+/*---------------------------------- Media queries ------------------------------- */
+
+@media screen and (min-width:500px) {
+    .title-modal-body{
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:576px) {
+
+    .container-fluid header .logo-menu .logo{
+        font-size:24px;
+        }
+        .container-fluid header nav .nav-items-sesion{
+        font-size: 16px;
+        font-weight: 600;
+       }
+        .container-fluid header .navbar .nav-items-carro svg{
+            height: 35px;
+            width: 35px;
+        }
+
+        .bi-list{
+            height: 30px;
+            width: 30px;
+        }
+        .commercial{
+        height: 35px;
+        font-size: 16px;
+    }
+    .bi-truck{
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+
+   
+}
+@media screen and (min-width:768px) {
+    .container-logo{
+        width: 135px;
+        height: 135px;
+    }
+          /*----Carousel-----*/
+    .d-block{
+        animation-name: despeje;
+        animation-iteration-count:infinite;
+        animation-timing-function:ease-out;
+        animation-duration: 40s;
+     }
+     @keyframes despeje {
+         from{}
+         to{
+             transform: scale(1.5,1.5)
+         }
+     }
+}
+
+@media screen and (min-width:992px) {
+    .search-bar{
+        margin-top:10px;
+    }
+    .container-fluid header .logo-menu .logo{
+        font-size: 24px;
+    }
+    .boton-icon-list{
+       padding-top:0;
+    }
+     
+    .list-group{
+        border-top: 3px solid #363636;
+       
+      }
+    .btn-nav-items-sesion-register, .btn-nav-items-sesion:hover{
+        background-color: #363636;
+        
+      }
+      .my-shopping:hover{
+        background-color: #363636;
+        color: #ffff;
+      }
+    .nav-items-shopping-cart:hover{
+        background-color: #363636;
+      }
+      
+}
+
+@media screen and (min-width:1200px) {
+    
+    .container-fluid header .logo-menu .logo{
+        font-size: 26px;
+    }
+
+    .categorias{
+        margin-left: 13%;
+          }
+
+}

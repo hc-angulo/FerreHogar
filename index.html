@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />
+    <link rel="stylesheet" href="style.css">
+    <title>FerreHogar</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!--------------------------------------HEADER------------------------------------->
+        <header class="row d-flex justify-content-between">
+            <!-- Logo y categorias -->
+            <div class="logo-menu col-auto d-flex g-0 order-1 order-lg-1">
+                <!-- Logo -->
+                <div class="logo d-flex align-items-center px-4 pt-lg-2 px-sm-2 px-lg-3">
+                    <a href="index.html" class="text-decoration-none" style="color: #ffff;margin-top:5px;">
+                        <p><span style="color: gold;">Ferre</span>Hogar</p>
+                    </a>
+                </div>
+                <!-- Menu -->
+                <div class="menu d-flex align-items-baseline align-items-lg-center ms-lg-2">
+                    <!-- Para versión menor o igual a 992px -->
+                    <button class="boton-icon-list d-flex align-items-center px-1 d-block d-lg-none"
+                        data-bs-toggle="offcanvas" data-bs-target="#offcanvas-menu" type="button"
+                        aria-controls="offcanvas-menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-list"
+                            viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                        </svg>
+                    </button>
+                    <!-- ---------------------------------- -->
+                    <!-- Para versión mayor o igual a 992px -->
+                    <button class="boton-icon-list d-flex align-items-lg-stretch px-1 d-none d-lg-block" id="btnMenu"
+                        type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-list"
+                            viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                        </svg>
+                    </button>
+                    <p class="menu-title d-none d-lg-block">Menú</p>
+                    <!-- ----------------------------------- -->
+                </div>
+            </div>
+
+            <!-- Enlaces -->
+            <nav class="col-auto d-flex align-items-baseline align-items-lg-stretch order-2 order-lg-3 g-lg-0">
+                <!---------Inicio sesión------------>
+                <!-- Dispositivos menores a 992px -->
+                <button class="nav-items-sesion pt-3 d-block d-lg-none" data-bs-toggle="modal"
+                    data-bs-target="#modal-sesion">
+                    <p>Inicia sesión</p>
+                </button>
+                <!-- Dispositivos mayores o iguales a 992px -->
+<div class="dropdown d-none d-lg-block align-items-lg-stretch">
+    <button class="btn-nav-items-sesion">Inicia sesión</button>
+    
+                        <div class="dropdown-content">
+                            <a 
+                            href=""
+                            data-bs-toggle="modal"
+                                data-bs-target="#modal-sesion"
+                                >
+                                Inicia sesión
+                            </a>
+                            <a href="index.html">Regístrate</a>
+                            <a href="">Mi cuenta</a>
+                        </div>
+                       
+    
+</div>
+                <!-- init modal-sesion -->
+                <div class="modal fade" id="modal-sesion" tabindex="-1" aria-hidden="true"
+                    aria-labelledby="label-modal-1" data-bs-backdrop="static">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="container-logo-header">
+                                    <!-- -->
+                                    <span class="name-logo-init">Ferre</span>Hogar
+                                </div>
+                                <button class="btn-close" data-bs-dismiss="modal" aria-label="cerrar"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container-modal-body">
+                                    <!--  -->
+                                    <div>
+                                        <p class="title-modal-body">¡Qué bueno tenerte de vuelta!</p>
+                                    </div>
+
+                                    <div class="container-email">
+                                        <!--  -->
+                                        <div class="label"><label for="name">Correo electrónico</label></div>
+                                        <input type="text" class="input" placeholder="Ingresa tu correo electrónico">
+                                    </div>
+                                    <div class="container-password">
+                                        <div class="label"><label for="name" class="password">Contraseña</label></div>
+                                        <button class="eye" data-bs-toggle="tooltip" data-bs-placement="top"
+                                            title="Mostrar/Ocultar">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                class="bi bi-eye-slash" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M13.359 11.238C15.06 9.72 16 8 16 8s-3-5.5-8-5.5a7.028 7.028 0 0 0-2.79.588l.77.771A5.944 5.944 0 0 1 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.134 13.134 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755-.165.165-.337.328-.517.486l.708.709z" />
+                                                <path
+                                                    d="M11.297 9.176a3.5 3.5 0 0 0-4.474-4.474l.823.823a2.5 2.5 0 0 1 2.829 2.829l.822.822zm-2.943 1.299.822.822a3.5 3.5 0 0 1-4.474-4.474l.823.823a2.5 2.5 0 0 0 2.829 2.829z" />
+                                                <path
+                                                    d="M3.35 5.47c-.18.16-.353.322-.518.487A13.134 13.134 0 0 0 1.172 8l.195.288c.335.48.83 1.12 1.465 1.755C4.121 11.332 5.881 12.5 8 12.5c.716 0 1.39-.133 2.02-.36l.77.772A7.029 7.029 0 0 1 8 13.5C3 13.5 0 8 0 8s.939-1.721 2.641-3.238l.708.709zm10.296 8.884-12-12 .708-.708 12 12-.708.708z" />
+                                            </svg>
+                                        </button>
+                                        <input type="password" placeholder="Ingresa tu contraseña" class="input">
+                                    </div>
+                                    <div class="reset-message">
+                                        <p>Restablecer contraseña</p>
+                                    </div>
+                                    <div class="contenedor-boton"><button class="boton">Ingresar</button></div>
+                                    <div class="invitacion-a-registro">
+                                        <p class="palabras">¿Aún no tienes cuenta? <a href=""
+                                                class="register-message">Regístrate</a></p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <!-- end modal-sesion -->
+
+                <!--------Mis compras----------->
+                <a href="" class="my-shopping d-none d-lg-block px-2 px-lg-3">Mis compras</a>
+                <!--------shopping-cart-icon---->
+                <a href="" class="nav-items-shopping-cart pt-2 px-1 px-sm-3 px-lg-3 pt-lg-3">
+                    <div class="shopping-cart-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-cart2"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+                        </svg>
+                    </div>
+                </a>
+            </nav>
+            <!-- Buscador -->
+            <div class="search-bar col-12 pb-2 pt-lg-1 order-3 order-lg-2 col-lg-5">
+                <div class="search-bar-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-search"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                    </svg>
+                </div>
+                <input type="search" spellcheck="false" placeholder="Buscar en FerreHogar">
+            </div>
+           
+          
+        </header>
+        <!-- Offcanvas: Menú categorias para versión menor a 992px -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-menu" aria-labelledby="offcanvas-menu">
+            <div class="offcanvas-header">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas">
+                </button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item primero"><a href="index.html"
+                            style="text-decoration: none;color:#363636;">Pintura</a></li>
+                    <li class="list-group-item"><a href="index.html"
+                            style="text-decoration: none;color:#363636;">Herrería</a></li>
+                    <li class="list-group-item"><a href="index.html"
+                            style="text-decoration: none;color:#363636;">Plomería</a></li>
+                    <li class="list-group-item"><a href="index.html"
+                            style="text-decoration: none;color:#363636;">Cerrajería</a></li>
+                    <li class="list-group-item"><a href="index.html"
+                            style="text-decoration: none;color:#363636;">Albañilería</a></li>
+                    <li class="list-group-item"><a href="index.html"
+                            style="text-decoration: none;color:#363636;">Albañilería</a></li>
+                    <li class="list-group-item"><a href="index.html"
+                            style="text-decoration: none;color:#363636;">Albañilería</a></li>
+                    <li class="list-group-item"><a href="index.html"
+                            style="text-decoration: none;color:#363636;">Albañilería</a></li>
+                    <li class="list-group-item ultimo"><a href="index.html"
+                            style="text-decoration: none;color:#363636;">Albañilería</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <main class="auxiliar-container row">
+            <!-- Menú categorias para versión mayor o igual a 992px -->
+            <div class="modal-menu" id="modalMenu">
+                <div class="categorias">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item primero"><a href="index.html"
+                                style="text-decoration: none;color:#363636;">Herramientas</a></li>
+                        <li class="list-group-item"><a href="index.html"
+                                style="text-decoration: none;color:#363636;">Herrería</a></li>
+                        <li class="list-group-item"><a href="index.html"
+                                style="text-decoration: none;color:#363636;">Plomería</a></li>
+                        <li class="list-group-item"><a href="index.html"
+                                style="text-decoration: none;color:#363636;">Cerrajería</a></li>
+                        <li class="list-group-item"><a href="index.html"
+                                style="text-decoration: none;color:#363636;">Albañilería</a></li>
+                        <li class="list-group-item"><a href="index.html"
+                                style="text-decoration: none;color:#363636;">Cerámica</a></li>
+                        <li class="list-group-item"><a href="index.html"
+                                style="text-decoration: none;color:#363636;">Construcción</a></li>
+                        <li class="list-group-item"><a href="index.html"
+                                style="text-decoration: none;color:#363636;">Carpintería</a></li>
+                        <li class="list-group-item ultimo"><a href="index.html"
+                                style="text-decoration: none;color:#363636;">Pintura</a></li>
+                    </ul>
+                </div>
+            </div>
+
+              <!-- Barra de publicidad -->
+              <section class="row g-0 d-none d-md-block">
+            <div class="commercial d-flex justify-content-center align-items-center ps-4">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-truck animate__animated animate__bounceInLeft" viewBox="0 0 16 16">
+                    <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                  </svg>
+                  <p class="slogan animate__animated animate__bounceInRight mt-3 ms-2">Envío <span class="highlight">GRATIS</span> a <span class="highlight">TODO </span>Chile por compras superiores a los 16.000 pesos.</p>
+            </div>
+            </section>
+
+            <!--Carousel-->
+            <section class="row g-0 mb-4">
+                <div id="demo" class="carousel slide px-0" data-bs-ride="carousel">
+
+                    <!-- Indicators/dots -->
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                    </div>
+                    
+                    <!-- The slideshow/carousel -->
+                    <div class="carousel-inner">
+                      <div class="carousel-item active container-carousel">
+                        <img src="img/h22.jpg" alt="Los Angeles" class="d-block" style="width:100%;min-height:150px;">
+                    </div>
+                      <div class="carousel-item">
+                        <img src="img/h32.jpg" alt="Chicago" class="d-block" style="width:100%;  min-height:150px;">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/h35.jpg" alt="New York" class="d-block" style="width:100%;  min-height:150px;">
+                      </div>
+                    </div>
+                    
+                    <!-- Left and right controls/icons -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                      <span class="carousel-control-next-icon"></span>
+                    </button>
+                  </div>
+            </section>
+    
+            <!-- Ofertas -->
+            <section class="row mb-4">
+                <div class="ofertas col ms-3 ms-md-4">
+                    <h3 style="font-weight:500; margin-bottom:5px;">Ofertas</h3>
+                    <div class="subrayado" style="width:300px; height:3px;background-color: gold;"></div>
+                    <div class="fotos row mt-4 justify-content-center">
+                        
+                        <div class="col-12 col-md-6 col-lg-3 order-1 order-md-1 order-lg-1">
+                            <a href="" class="producto-oferta">
+                                <div class="card mb-4">
+                                    <img src="img/L9.jpg" class="image-offer" alt="Soldadora Sweiss">
+                                    <div class="card-body">
+                                        <h6 class="card-subtitle">SWEISS</h6>
+                                        <p class="card-text">Soldadora Serie Skyarc One FX 110V/220V</p>
+                                        <div class="price-offer">
+                                            <div class="container-price-offer">
+                                                <h5 style="margin-bottom: 0;">$55.990</h5>
+                                                <p style="font-size:12px;margin-bottom: 0">Normal $89.490</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                         
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 order-2 order-md-2 order-lg-2">
+                            <a href="" class="producto-oferta">
+                                <div class="card mb-4">
+                                    <img src="img/T11.jpg" alt="Taladro Bosch" class="image-offer">
+                                    <div class="card-body">
+                                       <!--  <h5 class="card-title">Encabezado</h5> -->
+                                        <h6 class="card-subtitle">BOSCH</h6>
+                                        <p class="card-text">Taladro percutor inalámbrico GSB 18V-EC</p>
+                                       
+                                        <div class="price-offer">
+                                            <div class="container-price-offer">
+                                                <h5 style="margin-bottom: 0;">$55.990</h5>
+                                                <p style="font-size:12px;margin-bottom: 0">Normal $89.490</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                         
+                        </div>
+                        <div class="col-12 d-block d-md-none order-3">
+                            <a href="" class="producto-oferta">
+                                <div class="card mb-4">
+                                    <img src="img/auxiliar-1.jpg" alt="Motosierra Dolmar" class="image-offer">
+                                    <div class="card-body">
+                                       <!--  <h5 class="card-title">Encabezado</h5> -->
+                                        <h6 class="card-subtitle">BOSCH</h6>
+                                        <p class="card-text">Taladro percutor inalámbrico 13mm 18v.</p>
+                                        <div class="price-offer">
+                                            <div class="container-price-offer">
+                                                <h5 style="margin-bottom: 0;">$55.990</h5>
+                                                <p style="font-size:12px;margin-bottom: 0">Normal $89.490</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                         
+                        </div>
+                        <div class=" col-md-12 col-lg-6 d-none d-md-block order-md-3 order-lg-3">
+                            <a href="" class="producto-oferta">
+                                <div class="card mb-4">
+                                    <div class="auxiliar-imagen" style="position: relative;">
+                                        <img src="img/T21.jpg" alt="Motosierra Dolmar" class="image-offer">
+                                        <div class="herramientas" style="position:absolute;top:0px;left:0;background: #363636;color: white;border-radius:2px 2px 2px 0;width:220px;display: flex; justify-content: center; align-items: center; padding-top:14px; height:25px;">
+                                            <p style="font-size: 14px;">HERRAMIENTAS Y MAQUINARIA</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-body card-body-big">
+                                        <h6 class="card-subtitle">DOLMAR</h6>
+                                        <p class="card-text">Motosierra PS32C/35 32 cc 2T a gasolina</p>
+                                    </div>
+                                    <div style="background:#363636; height:43px; border-radius:0 0 2px 2px; width:120px; color:#ffff; padding-left:8px;padding-bottom: 0; width:100%; display: flex; justify-content: center; align-items: center;">
+                                        <h3 style="margin-bottom: 0;">$220.990</h3>
+                                    </div>
+                                </div>
+                            </a>
+                       
+                        </div>
+                        <div class="col-12 d-block d-md-none order-4">
+                            <a href="" class="producto-oferta">
+                                <div class="card mb-4">
+                                    <img src="img/auxiliar-2.jpg" alt="Esmeril DeWALT" class="image-offer">
+                                    <div class="card-body">
+                                       <!--  <h5 class="card-title">Encabezado</h5> -->
+                                        <h6 class="card-subtitle">DeWALT</h6>
+                                        <p class="card-text">Esmeril Angular 5' 1200w Dwe4212-b2</p>
+                                        <div class="price-offer">
+                                            <div class="container-price-offer">
+                                                <h5 style="margin-bottom: 0;">$55.990</h5>
+                                                <p style="font-size:12px;margin-bottom: 0">Normal $89.490</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                         
+                        </div>
+                        <div class="col-md-12 col-lg-6 d-none d-md-block order-md-6 order-lg-4">
+                            <a href="" class="producto-oferta">
+                                <div class="card mb-4">
+                                    <div class="auxiliar-imagen" style="position: relative;">
+                                        <img src="img/T4.jpg" alt="Esmeril DeWALT" class="image-offer">
+                                        <div class="herramientas" style="position:absolute;top:0px;left:0;background: #363636;color: white;border-radius:2px 2px 2px 0;width:220px;display: flex; justify-content: center; align-items: center; padding-top:14px; height:25px;">
+                                            <p style="font-size: 14px;">HERRAMIENTAS Y MAQUINARIA</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-body card-body-big">
+                                        <h6 class="card-subtitle">DeWALT</h6>
+                                        <p class="card-text">Esmeril Angular 5' 120w Dwe4212-b2</p>
+                                    </div>
+                                    <div style="background:#363636; height:43px; border-radius:0 0 2px 2px; width:120px; color:#ffff; padding-left:8px;padding-bottom: 0; width:100%; display: flex; justify-content: center; align-items: center;">
+                                        <h3 style="margin-bottom: 0;">$123.990</h3>
+                                    </div>
+                                </div>
+                            </a>
+                       
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 order-5 order-md-4 order-lg-5">
+                            <a href="" class="producto-oferta">
+                                <div class="card mb-4">
+                                    <img src="img/L8.jpeg" alt="Herramientas Blackandecker" class="image-offer">
+                                    <div class="card-body">
+                                       <!--  <h5 class="card-title">Encabezado</h5> -->
+                                        <h6 class="card-subtitle">BLACKANDECKER</h6>
+                                        <p class="card-text">Estuche con linterna y juego de destornilladores.</p>
+                                        <div class="price-offer">
+                                            <div class="container-price-offer">
+                                                <h5 style="margin-bottom: 0;">$55.990</h5>
+                                                <p style="font-size:12px;margin-bottom: 0">Normal $89.490</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                         
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 order-6 order-md-5 order-lg-6">
+                            <a href="" class="producto-oferta">
+                                <div class="card mb-4">
+                                    <img src="img/navaja.jpg" alt="Navajas Victorinox" class="image-offer">
+                                    <div class="card-body">
+                                       <!--  <h5 class="card-title">Encabezado</h5> -->
+                                        <h6 class="card-subtitle">VICTORINOX</h6>
+                                        <p class="card-text"> Navaja de hoja grande 12 funciones 51 gramos</p>
+                                        <div class="price-offer">
+                                            <div class="container-price-offer">
+                                                <h5 style="margin-bottom: 0;">$55.990</h5>
+                                                <p style="font-size:12px;margin-bottom: 0">Normal $89.490</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                         
+                        </div>
+                </div>
+                </div>
+            </section>
+
+            <!-- Novedades -->
+            <section class="row mb-4">
+    <div class="col ms-3 ms-md-4">
+        <h3 style="font-weight:500; margin-bottom:5px;">Novedades</h3>
+        <div class="subrayado" style="width:300px; height:3px;background-color: gold;"></div>
+        <div class="row mt-4 justify-content-center">
+    <div class="col-md-12 col-lg-6 mb-4">
+        <a href="">
+            <div class="container-image-novelties">
+                <img src="images/rotomartillo-novedades.jpg" alt="Rotomartillo" class="image-novelties" >
+                <div class="container-information-novelties">
+                    <div class="container-price-novelties">
+                        <div class="price-novelties">
+                            <p>$185.000</p>
+                        </div>
+                    </div>
+                    <div class="product-name">
+                        <p>Rotomartillo inalámbrico Trotec</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-md-6 col-lg-3 mb-4">
+        <a href="">
+            <div class="container-image-novelties">
+                <img src="images/grifo-novedades.jpg" alt="Grifo de cocina" class="image-novelties">
+                <div class="container-information-novelties">
+                    <div class="container-price-novelties">
+                        <div class="price-novelties">
+                            <p>$105.490</p>
+                        </div>
+                    </div>
+                    <div class="product-name">
+                        <p>Grifo de cocina Tres</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-md-6 col-lg-3 mb-4">
+        <a href="">
+            <div class="container-image-novelties">
+                <img src="images/puerta-novedades.jpg" alt="Puerta de exterior" class="image-novelties">
+                <div class="container-information-novelties">
+                    <div class="container-price-novelties">
+                        <div class="price-novelties">
+                            <p>$195.490</p>
+                        </div>
+                    </div>
+                    <div class="product-name">
+                        <p>Puerta Moldupanel</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-md-6 col-lg-3 mb-4">
+        <a href="">
+            <div class="container-image-novelties">
+                <img src="images/baño-novedades.jpg" alt="Juego de baño" class="image-novelties">
+                <div class="container-information-novelties">
+                    <div class="container-price-novelties">
+                        <div class="price-novelties">
+                            <p>$95.490</p>
+                        </div>
+                    </div>
+                    <div class="product-name">
+                        <p>Baño Trevi Laguna</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-md-6 col-lg-3 mb-4">
+        <a href="">
+            <div class="container-image-novelties">
+                <img src="images/piso-novedades.jpg" alt="Piso flotante" class="image-novelties">
+                <div class="container-information-novelties">
+                    <div class="container-price-novelties">
+                        <div class="price-novelties">
+                            <p>$9.490 m<sup>2</sup></p>
+                        </div>
+                    </div>
+                    <div class="product-name">
+                        <p>Piso flotante café</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-md-12 col-lg-6 mb-4">
+        <a href="">
+            <div class="container-image-novelties">
+                <img src="images/lampara-novedades.jpg" alt="Juego de lámpara" class="image-novelties">
+                <div class="container-information-novelties">
+                    <div class="container-price-novelties">
+                        <div class="price-novelties">
+                            <p>$28.990</p>
+                        </div>
+                    </div>
+                    <div class="product-name">
+                        <p>Juego de lámparas Roowre</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-md-12 col-lg-6 mb-4">
+        <a href="">
+            <div class="container-image-novelties">
+                <img src="images/grifo-cocina-novedades.jpg" alt="Grifo de cocina" class="image-novelties">
+                <div class="container-information-novelties">
+                    <div class="container-price-novelties">
+                        <div class="price-novelties">
+                            <p>$32.990</p>
+                        </div>
+                    </div>
+                    <div class="product-name">
+                        <p>Grifo de cocina Imex</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-md-6 col-lg-3 mb-4">
+        <a href="">
+            <div class="container-image-novelties">
+                <img src="images/taladro-novedades.jpg" alt="Taladro Makita" class="image-novelties">
+                <div class="container-information-novelties">
+                    <div class="container-price-novelties">
+                        <div class="price-novelties">
+                            <p>$125.990</p>
+                        </div>
+                    </div>
+                    <div class="product-name">
+                        <p>Taladro Makita</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-md-6 col-lg-3 mb-4">
+        <a href="">
+            <div class="container-image-novelties">
+                <img src="images/sierra-novedades.jpg" alt="Sierra circular Hitachi" class="image-novelties">
+                <div class="container-information-novelties">
+                    <div class="container-price-novelties">
+                        <div class="price-novelties">
+                            <p>$127.990</p>
+                        </div>
+                    </div>
+                    <div class="product-name">
+                        <p>Sierra Hitachi</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-md-6 col-lg-3 mb-4">
+        <a href="">
+            <div class="container-image-novelties">
+                <img src="images/rodillo-novedades.jpg" alt="Paint Runner Pro" class="image-novelties">
+                <div class="container-information-novelties">
+                    <div class="container-price-novelties">
+                        <div class="price-novelties">
+                            <p>$15.990</p>
+                        </div>
+                    </div>
+                    <div class="product-name">
+                        <p>Paint Runner Pro</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-md-6 col-lg-3 mb-4">
+        <a href="">
+            <div class="container-image-novelties">
+                <img src="images/taladro-novedades.jpg" alt="Taladro Bosch" class="image-novelties">
+                <div class="container-information-novelties">
+                    <div class="container-price-novelties">
+                        <div class="price-novelties">
+                            <p>$99.990</p>
+                        </div>
+                    </div>
+                    <div class="product-name">
+                        <p>Taladro Bosch</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-md-12 col-lg-6 mb-4">
+        <a href="">
+            <div class="container-image-novelties">
+                <img src="images/engrapadora-novedades.jpg" alt="Engrapadora DeWalt" class="image-novelties">
+                <div class="container-information-novelties">
+                    <div class="container-price-novelties">
+                        <div class="price-novelties">
+                            <p>$115.990</p>
+                        </div>
+                    </div>
+                    <div class="product-name">
+                        <p>Engrapadora DeWalt</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+</div>
+            </section>
+
+            <!-- Marcas -->
+            <section class="row">
+                <div class="col ms-3 ms-md-4">
+                    <h3 style="font-weight:500; margin-bottom:5px;">Nuestras marcas</h3>
+                    <div class="subrayado" style="width:300px; height:3px;background-color: gold;"></div>
+                    <div class="row mt-4 justify-content-center">
+                        <div class="col-4 col-md-3 col-lg-2 mb-3">
+                            <div class="container-logo d-flex justify-content-center align-items-center">
+                               <img src="images/makita-logo.jpg" style="width: 71%; height: auto;"  alt="makita">
+                            </div>
+                                    </div> 
+                                    <div class="col-4 col-sm-3 col-md-2 mb-3">
+                                        <div class="container-logo d-flex justify-content-center align-items-center">
+                                            <img src="images/dewalt-logo.png" style="width: 71%; height: auto;"  alt="dewalt">
+                                         </div>
+                                    </div> 
+                                    <div class="col-4 col-sm-3 col-md-2 mb-3">
+                                        <div class="container-logo d-flex justify-content-center align-items-center">
+                                            <img src="images/blackandecker-logo.png" style="width: 71%; height: auto;"  alt="blackandecker">
+                                         </div>
+                                    </div> 
+                                    <div class="col-4 col-sm-3 col-md-2 mb-3">
+                                        <div class="container-logo d-flex justify-content-center align-items-center">
+                                            <img src="images/stanley-logo.png" style="width: 80%; height: auto;"  alt="stanley">
+                                         </div>
+                                    </div> 
+                                    <div class="col-4 col-sm-3 col-md-2 mb-3">
+                                        <div class="container-logo d-flex justify-content-center align-items-center">
+                                            <img src="images/alyco-logo.jpg" style="width: 75%; height: auto;"  alt="alyco">
+                                         </div>
+                                    </div> 
+                                    <div class="col-4 col-sm-3 col-md-2 mb-3">
+                                        <div class="container-logo d-flex justify-content-center align-items-center">
+                                            <img src="images/cisa-logo.jpg" style="width: 65%; height: auto;"  alt="cisa">
+                                         </div>
+                                    </div> 
+                                    <div class="col-4 col-sm-3 col-md-2 mb-3">
+                                        <div class="container-logo d-flex justify-content-center align-items-center">
+                                            <img src="images/bosch-logo.jpg" style="width: 85%; height: auto;"  alt="bosch">
+                                         </div>
+                                    </div> 
+                                    <div class="col-4 col-sm-3 col-md-2 mb-3">
+                                        <div class="container-logo d-flex justify-content-center align-items-center">
+                                            <img src="images/3m-logo.png" style="width: 55%; height: auto;"  alt="3m">
+                                         </div>
+                                    </div> 
+                                    <div class="col-4 col-sm-3 col-md-2 mb-3">
+                                        <div class="container-logo d-flex justify-content-center align-items-center">
+                                            <img src="images/jbm-logo.png" style="width: 85%; height: auto;"  alt="jbm">
+                                         </div>
+                                    </div> 
+                                    <div class="col-4 col-sm-3 col-md-2 mb-3">
+                                        <div class="container-logo d-flex justify-content-center align-items-center">
+                                            <img src="images/desa-logo.png" style="width: 85%; height: auto;"  alt="desa">
+                                         </div>
+                                    </div> 
+                                    <div class="col-4 col-sm-3 col-md-2 mb-3">
+                                    <div class="container-logo d-flex justify-content-center align-items-center">
+                                        <img src="images/hitachi-logo.jpg" style="width:95%; height: auto;"  alt="hitachi">
+                                     </div>
+                                    </div> 
+                                    <div class="col-4 col-md-3 col-lg-2 mb-3">
+                                        <div class="container-logo d-flex justify-content-center align-items-center">
+                                            <img src="images/hispanox-logo.jpg" style="width:85%; height: auto;"  alt="hispanox">
+                                         </div>
+                                        </div> 
+                    </div>   
+               
+                    </div>
+            
+            </section>
+            </main>
+        <!--------------------------------------------------------->
+    </div>
+
+    <script>
+        // Initialize tooltips
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+    </script>
+    <script>
+        // Get the modal
+        let modalMenu = document.getElementById("modalMenu");
+
+        // Get the button that opens the modal
+
+        let btnMenu = document.getElementById("btnMenu");
+
+        /* let listado = document.getElementById("listado"); */
+        // When the user clicks the button, open the modal 
+        btnMenu.addEventListener('click', () => {
+            modalMenu.style.display = "block";
+
+
+        })
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modalMenu) {
+                modalMenu.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>
+
